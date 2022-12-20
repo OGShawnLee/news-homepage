@@ -17,7 +17,7 @@
   import { iconMenu, iconMenuClose } from "@root/assets";
   import { tick } from "svelte";
 
-  const TABLE_BREAKPOINT = 768
+  const TABLET_BREAKPOINT = 768
 
   let isOpen = false;
   let buttonRef: HTMLButtonElement;
@@ -26,7 +26,7 @@
   let panelName = "popover-panel";
   let viewWidth = 0
 
-  $: if (viewWidth >= TABLE_BREAKPOINT) isOpen = false;
+  $: if (viewWidth >= TABLET_BREAKPOINT) isOpen = false;
 
   function handleClose(event?: KeyboardEvent | MouseEvent) {
     if (event instanceof KeyboardEvent) {
