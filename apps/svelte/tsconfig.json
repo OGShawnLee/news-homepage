@@ -16,6 +16,8 @@
     "checkJs": true,
     "isolatedModules": true,
     "paths": {
+      "@root": ["src"],
+      "@root/*": ["src/*"],
       "@lib": ["src/lib"],
       "@lib/*": ["src/lib/*"],
     },
